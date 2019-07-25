@@ -1,7 +1,7 @@
 # EventTarget
 An event Manager.
 
-###Installing
+### Installing
 
 1.```npm install eventtarget-manager --save```
 
@@ -10,7 +10,7 @@ or
 2.```<script src="EventTarget.js"></script>```
 
 
-###Usage(run in node)
+### Usage(run in node)
 
 example 1——you can add any function on the same event and transfer an object with.
 
@@ -60,8 +60,8 @@ const handler1=function () {
 ```
    
 
-###[example](index.html)
+### [example](index.html)
 
-###LICENSE
+### LICENSE
 
 MIT
