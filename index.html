@@ -1,16 +1,13 @@
-# EventTarget
-An event Manager.
-
-####Installing
-```npm install eventtarget-manager --save```
-
-or
-
-```<script src="EventTarget.js"></script>```
-###Usage
-```
-//const EventTarget=require('EventTarget);
-const target=new EventTarget();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventTarget</title>
+    <script src="EventTarget.js"></script>
+</head>
+<body>
+<script>
+    const target=new EventTarget();
     //example 1——you can add any function on the same event and transfer an object with.
     target.addEvents("message",function (e) {
         setTimeout(function () {
@@ -41,5 +38,6 @@ const target=new EventTarget();
     target.removeEvents("close",handler1);
     target.trig({type: "close"});
 
-```
-
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "name": "eventtarget",
+  "name": "eventtarget-manager",
   "version": "1.0.0",
   "description": "An event Manager.",
   "main": "main.js",
@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/Marksteinsong/EventTarget/issues"
   },
-  "homepage": "https://github.com/Marksteinsong/EventTarget#readme"
+  "homepage": "https://github.com/Marksteinsong/EventTarget#readme",
+  "dependencies": {}
 }
