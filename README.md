@@ -10,11 +10,12 @@ or
 2.```<script src="EventTarget.js"></script>```
 
 
-###Usage
+###Usage(run in node)
 
 example 1——you can add any function on the same event and transfer an object with.
 
 ```flow js
+    const EventTarget=require('eventtarget-manager');
     const target=new EventTarget();
     target.addEvents("message",function (e) {
         setTimeout(function () {
@@ -32,6 +33,7 @@ example 1——you can add any function on the same event and transfer an object
 
 example 2——remove  an event
 ```flow js
+const EventTarget=require('eventtarget-manager');
 const target=new EventTarget();
 target.addEvents("fly",function () {
        console.log("This was removed and could never be showed.");
@@ -42,6 +44,7 @@ target.addEvents("fly",function () {
 
 example 3——remove a function in the event without any **influence** to the functions in **the same event**
 ```flow js
+const EventTarget=require('eventtarget-manager');
 const target=new EventTarget();
 const handler1=function () {
         console.log("This was removed and could never be showed.");
