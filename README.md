@@ -60,4 +60,5 @@ const handler1=function () {
 ###[example](index.html)
 
 ###LICENSE
+
 MIT
