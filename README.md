@@ -1,17 +1,20 @@
 # EventTarget
 An event Manager.
 
-####Installing
-```npm install eventtarget-manager --save```
+###Installing
+1.```npm install eventtarget-manager --save```
 
 or
 
 ```<script src="EventTarget.js"></script>```
+
+
 ###Usage
-```
-//const EventTarget=require('EventTarget);
+
+example 1——you can add any function on the same event and transfer an object with.
+
+```flow js
 const target=new EventTarget();
-    //example 1——you can add any function on the same event and transfer an object with.
     target.addEvents("message",function (e) {
         setTimeout(function () {
             console.log(e.message);
@@ -23,14 +26,23 @@ const target=new EventTarget();
         },3000)
     });
     target.trig({type:"message",message:"This is the thing in 3s to show."});
-    //example 2——remove  an event
-    target.addEvents("fly",function () {
+```
+
+
+example 2——remove  an event
+```flow js
+const target=new EventTarget();
+target.addEvents("fly",function () {
        console.log("This was removed and could never be showed.");
     });
     target.removeEvents("fly");
     target.trig({type: "fly"});
-    //example 2——remove a function in the event
-    const handler1=function () {
+```
+
+example 3——remove a function in the event
+```flow js
+const target=new EventTarget();
+const handler1=function () {
         console.log("This was removed and could never be showed.");
     };
     const handler2=function(){
@@ -39,7 +51,9 @@ const target=new EventTarget();
     target.addEvents("close",handler1);
     target.addEvents("close",handler2);
     target.removeEvents("close",handler1);
-    target.trig({type: "close"});
+    target.trig({type: "close"});   
 
 ```
+   
 
+###[example](index.html)
