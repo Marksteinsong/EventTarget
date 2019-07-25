@@ -1,0 +1,24 @@
+{
+  "name": "eventtarget",
+  "version": "1.0.0",
+  "description": "An event Manager.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marksteinsong/EventTarget.git"
+  },
+  "keywords": [
+    "An",
+    "event",
+    "Manager."
+  ],
+  "author": "markstien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marksteinsong/EventTarget/issues"
+  },
+  "homepage": "https://github.com/Marksteinsong/EventTarget#readme"
+}
