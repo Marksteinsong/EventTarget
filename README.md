@@ -2,11 +2,12 @@
 An event Manager.
 
 ###Installing
+
 1.```npm install eventtarget-manager --save```
 
 or
 
-```<script src="EventTarget.js"></script>```
+2.```<script src="EventTarget.js"></script>```
 
 
 ###Usage
@@ -14,7 +15,7 @@ or
 example 1——you can add any function on the same event and transfer an object with.
 
 ```flow js
-const target=new EventTarget();
+    const target=new EventTarget();
     target.addEvents("message",function (e) {
         setTimeout(function () {
             console.log(e.message);
@@ -39,7 +40,7 @@ target.addEvents("fly",function () {
     target.trig({type: "fly"});
 ```
 
-example 3——remove a function in the event
+example 3——remove a function in the event without any **influence** to the functions in **the same event**
 ```flow js
 const target=new EventTarget();
 const handler1=function () {
